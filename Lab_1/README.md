@@ -1,94 +1,44 @@
-\# 🧪 Lab 1 – Basic Image Processing
 
 
+# 🧪 Lab 1 – Basic Image Processing
 
-This lab demonstrates basic operations in Digital Image Processing using Python and OpenCV.
-
-
+This lab demonstrates fundamental operations in Digital Image Processing (DIP) using Python and OpenCV. It includes color space transformations and basic image conversions.
 
 ---
 
+## 📌 Implemented Scripts
 
+- **OnlyBluePlane.py**  
+  Extracts only the blue channel from a color image by setting the red and green channels to zero.
 
-\## 🔍 Implemented Tasks
+- **rgbToGray.py**  
+  Converts an RGB image to grayscale using OpenCV's `cv2.cvtColor()` method.
 
-
-
-\- ✅ Extract blue color plane from an image
-
-\- ✅ Convert RGB image to Grayscale
-
-\- ✅ Convert RGB image to Black \& White (binary)
-
-
+- **rgbToBlackWhite.py**  
+  Converts an RGB image to a binary (black & white) format using thresholding.
 
 ---
 
-
-
-\## 📂 Folder Structure
-
-
-
-
-
----
-
-
-
-\## 🖼️ Sample Results
-
-
-
-| Original        | Black \& White     | Grayscale          | Blue Channel Only      |
-
-|-----------------|-------------------|--------------------|------------------------|
-
-| !\[](input/sample.jpg) | !\[](output/output\_bw.jpg) | !\[](output/output\_gray.jpg) | !\[](output/output\_OnlyBluePlane.jpg) |
-
-
+## 🗂️ Folder Structure
+```
+Lab_1
+├── input
+│ └── sample.jpg
+├── output/
+│ ├── output_OnlyBluePlane.jpg
+│ ├── output_gray.jpg
+│ └── output_bw.jpg
+├── OnlyBluePlane.py
+├── rgbToGray.py
+├── rgbToBlackWhite.py
+└── README.md
+```
 
 ---
 
+## ⚙️ Requirements
 
-
-\## 🐍 Python Scripts
-
-
-
-\- \*\*OnlyBluePlane.py\*\*  
-
-&nbsp; Extracts only the blue channel by zeroing out red and green.
-
-
-
-\- \*\*rgbToGray.py\*\*  
-
-&nbsp; Converts the image to grayscale using `cv2.cvtColor`.
-
-
-
-\- \*\*rgbToBlackWhite.py\*\*  
-
-&nbsp; Applies binary thresholding to convert to black \& white.
-
-
-
----
-
-
-
-\## ⚙️ Requirements
-
-
-
-Install required libraries using:
-
-
+Make sure Python is installed. Then install the required libraries:
 
 ```bash
-
 pip install -r ../requirements.txt
-
-
-
