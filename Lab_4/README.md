@@ -5,8 +5,6 @@ This lab implements two classic image–compression pipelines:
 1. **Arithmetic Coding** on grayscale images (PGM P5), including a tiny PGM reader/writer and bit–level I/O.
 2. **JPEG compression** (simplified) built from the core steps: RGB→YCbCr, 8×8 DCT, quantization, dequantization, IDCT, and reconstruction.
 
-> All code is educational and avoids using external compression libraries, so you can see the mechanics.
-
 ---
 
 ## Folder layout
